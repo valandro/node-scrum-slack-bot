@@ -2,7 +2,7 @@
 
 # Slack Scrum Bot
 
-<img src="static/img/slack.png" style="height: 3em; width: 3em;">
+<img src="static/img/slack.png" height="100" width="100">
 
 A Slack bot built using `NodeJS` that alarms your team when the Daily's time is coming.
 
