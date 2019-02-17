@@ -6,6 +6,7 @@ const bot = new SlackBot({
     name: 'daily-bot'
 });
 
+// On start event
 bot.on('start', () => {
     const params = {
         icon_emoji: ':robot_face:'
