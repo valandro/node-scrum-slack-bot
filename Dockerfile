@@ -1,9 +1,5 @@
-FROM node:8
-# Create app directory
-WORKDIR /usr/src/app
+FROM node:8-alpine
 # Install app dependencies
-COPY package*.json ./
 RUN npm install
-# Bundle app source
-COPY . .
+# Run app
 CMD ["npm", "start"]
