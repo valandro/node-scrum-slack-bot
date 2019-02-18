@@ -17,6 +17,6 @@ bot.on('start', () => {
 });
 
 // Cron job to set your Daily's time
-new CronJob('00 30 9 * * 1-5', () => {
+new CronJob('00 30 11 * * 1-5', () => {
     bot.postMessageToChannel('general', 'Está na hora da daily!');
 },null,true,'America/Sao_Paulo');
