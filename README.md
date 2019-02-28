@@ -19,7 +19,7 @@ SLACK_TOKEN=xoxb-3233057...
 
 #### Note
 
-> **Also you could change the channels that will be receive the messages from the post.**
+> **Also you could change the channels that will be receive the messages from the bot.**
 
 ### Change daily's time
 
@@ -27,8 +27,9 @@ Just change the cron jobs that are defined in `index.js`.
 
 ```javascript
 new CronJob('00 25 9 * * 1-5', () => {
-    bot.postMessageToChannel('omni_pdv_time_a', 'Está quase na hora da daily, faltam apenas *5 minutos!* :eyes:');
-},null,true,'America/Sao_Paulo');
+    bot.postMessageToChannel('omni_pdv_time_a', 
+                             'Está quase na hora da daily, faltam apenas *5 minutos!* :eyes:');
+    },null,true,'America/Sao_Paulo');
 ```
 
 ### License
